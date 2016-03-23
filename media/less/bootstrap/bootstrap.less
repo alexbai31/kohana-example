@@ -1,0 +1,169 @@
+/*!
+ * Bootstrap v2.1.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+
+ // CSS Reset
+ @import "reset.less";
+ // Core variables and mixins
+ @import "variables.less";
+ // Modify this for custom colors, font-sizes, etc
+ @import "mixins.less";
+ // Grid system and page structure
+ @import "scaffolding.less";
+ @import "grid.less";
+ @import "layouts.less";
+ // Base CSS
+ @import "type.less";
+ @import "code.less";
+ @import "forms.less";
+ @import "tables.less";
+ // Components: common
+ @import "sprites.less";
+ @import "dropdowns.less";
+ @import "wells.less";
+ @import "component-animations.less";
+ @import "close.less";
+ // Components: Buttons & Alerts
+ @import "buttons.less";
+ @import "button-groups.less";
+ @import "alerts.less";
+ // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+ // Components: Nav
+ @import "navs.less";
+ @import "navbar.less";
+ @import "breadcrumbs.less";
+ @import "pagination.less";
+ @import "pager.less";
+ // Components: Popovers
+ @import "modals.less";
+ @import "tooltip.less";
+ @import "popovers.less";
+ // Components: Misc
+ @import "thumbnails.less";
+ @import "labels-badges.less";
+ @import "progress-bars.less";
+ @import "accordion.less";
+ @import "carousel.less";
+ @import "hero-unit.less";
+ // Utility classes
+ @import "utilities.less";
+
+ // Has to be last to override when necessary
+
+ .page {
+    padding: @containerPadding;
+}
+*{
+    border-radius: 0 !important;
+}
+
+body{
+    padding-top: 30px;
+}
+.dropdown-menu {
+    ul {
+        list-style-type: none;
+        list-style-position: inside;
+        padding: 0;
+        margin-left: 0;
+    }
+}
+.modal-body{
+  .all, .every, .individual{
+    display:none;
+}
+}
+.navbar{
+    position:fixed;
+    top:0;
+    z-index: 10;
+
+    /*.navbar-inner{
+        background-image: none;
+        background-color: #ffc56e;
+    }
+
+    .brand {
+        float: left;
+        display: block;
+        padding: 10px 20px 10px;
+        margin-left: -20px;
+        font-size: 20px;
+        font-weight: 200;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        color:#555;
+        text-shadow:0px 0px 0 rgb(231,231,231),
+        1px 1px 0 rgb(216,216,216),
+        2px 2px 0 rgb(202,202,202);
+
+    }    
+    .nav > li > a{
+        float: none;
+        padding: 10px 15px 10px;
+        color: #111;
+        text-decoration: none;
+        font-family: Helvetica;
+        text-shadow: none;
+    }
+    .dropdown-toggle{
+        color: #111;
+    }
+    .dropdown-toggle:hover{
+        text-decoration: none;
+    }
+    .nav .dropdown-toggle .caret{
+        border-top-color: #111;
+        border-bottom-color: #111;
+    }
+    .nav > li > a:hover{
+        text-shadow: 0px 0px 2px white;
+    }
+    .brand:hover{
+        text-shadow:0px 0px 3px white;
+    }
+    *, input{
+        border-radius: 0;
+    }*/
+}
+
+.menu{
+    position:relative;
+    top:9px;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-left:1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+ }
+
+.prices.table{
+    thead{
+        th{
+            vertical-align: top;
+        }
+    }
+    td{
+        vertical-align: top;
+    }
+}
+
+

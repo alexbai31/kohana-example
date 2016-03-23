@@ -1,0 +1,17 @@
+<events>
+  <event>
+      <time>00:00</time>
+      <actionname>PriceChange<actionname>
+      <functionname>action_price</functionname>
+      <arguments>
+        <arg1>
+           1
+        </arg1>
+      <arguments>
+      <result>
+        SUCCESS
+      </result>
+      <comment>
+      </comment>
+  </event>
+</events>
